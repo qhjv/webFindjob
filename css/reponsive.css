@@ -1,0 +1,351 @@
+/*---------------
+ Mobile vs Ipad
+ ------------------ */
+
+
+
+@media (max-width:1023px){
+
+    body  .container {
+        max-width: 850px;
+    }
+
+    /*-----------------
+    Navbar
+    ----------------*/
+
+
+
+    .navbar-brand {
+        text-align: left;
+    }
+    a.navbar-brand {
+        width: 78%;
+    }
+    div#collapsibleNavbar {
+        position: absolute;
+        top: 80px;
+        right: 16px;
+        width: 410px;
+        background: var(--color-black-900);
+        z-index: 999;
+    }
+    div#collapsibleNavbar .nav {
+        height: 100%;
+        width: 100%;
+        display: flex;
+    }
+    .navbar-nav{
+        width:100%;
+    }
+    li.nav-item {
+        margin-left: 10px;
+        font-size: 11px;
+        justify-content: space-between;
+    }
+    li.nav-item{
+        flex-direction: column;
+        align-items: end;
+    }
+    li.nav-item::before{
+        display: none;
+    }
+    li.nav-item i{
+        display: none;
+    }
+    a.nav-link{
+        color:#d3cfcf;
+    }
+    .nav-item:hover a.nav-link{
+        color:#ffffff;
+    }
+    i.nav-link_plus.fas.fa-plus {
+        position: absolute;
+        right: 0;
+        top: 16px;
+        transform: translateY(-50%);
+        display: block!important;
+        width: 100%;
+        text-align: end;
+    }
+    .nav-item:hover i.nav-link_plus {
+        color:#ffffff;
+    }
+    nav.menu-list {
+        position: relative;
+        width: 100%;
+        top: 0;
+        display: none;
+    }
+    li.menu-list-ul-li {
+        padding-bottom: 8px;
+        border-bottom: 1px solid #333;
+    }
+    li.nav-item:hover nav.menu-list{
+        display: none;
+    }
+
+    /*-----------------
+    Home
+    ----------------*/
+
+    .home__content h1 {
+        font-weight: 700;
+        font-size: 55px;
+        text-align: center;
+    }
+    .home__search {
+        height: 234px;
+        padding: 10px;
+    }
+    .home__search--button.col-lg-2.col-md-12 {
+        padding: 0;
+    }
+    .btn-danger {
+        width: 100%;
+    }
+
+
+    /*-----------------
+    categorie
+    ----------------*/
+
+    .categorie {
+        width:100%;
+        flex-direction: column;
+    }
+    .categorie__div {
+        background-position: 50% 5%;
+        padding:10px;
+    }
+    .content.categorie__content {
+        width: 100%;
+    }
+    .categorie__list .categorie__list--career{
+        max-width: 45%;
+    }
+    
+
+    /*-----------------
+    feature
+    ----------------*/
+
+
+    .owl-theme .owl-nav {
+        display: none;
+    }
+
+
+    /*-----------------
+    information
+    ------------------*/
+
+    
+    .information__work--button {
+        width: 150px;
+    }
+    .information__latest--content{
+        margin-top: 90px;
+    }
+   
+    body .information__latest--news .container .row .information__latest--new {
+        max-width: 96%;
+    }
+    .information__latest--new-content {
+        margin-left: 20px;
+        width: 71%;
+    }
+   
+
+
+    /*-----------------
+    statistics
+    ------------------*/
+
+    .statistics__number-2 .statistics__number--border{
+        display: none;
+    }
+
+
+
+    /*-----------------
+    footer
+    ------------------*/
+    .footer__main--email {
+        margin-top: 50px;
+    }
+    nav.footer__question--nav ul.d-flex.justify-content-center.align-items-center {
+        text-align: center;
+        flex-wrap: wrap;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+/*-------------
+      Ipad     
+--------------*/
+
+
+@media(min-width:740px) and (max-width:1023px){
+
+    /*-----------------
+    information
+    ------------------*/
+    body .categorie__list .container .row{
+        margin-left:0;
+    }
+    
+   
+    
+
+}
+
+
+/*-------------
+    Mobile     
+--------------*/
+
+@media (max-width:739px){
+
+
+
+    /*-----------------
+    Navbar
+    ----------------*/
+
+
+    a.navbar-brand {
+        width: 60%;
+    }
+    div#collapsibleNavbar {
+        top: 100px;
+        right: 0;
+        width: 100%;
+    }
+
+    /*-----------------
+    categorie
+    ----------------*/
+
+    .categorie__list .categorie__list--career {
+        max-width: 100%;
+    }
+
+    /*-----------------
+    feature
+    ----------------*/
+
+    .feature__content {
+        margin-left: 20px;
+    }
+    .item {
+        width: 350px;
+        height: 400px;
+    }
+    .feature__slide--main{
+        height: 70%;
+    }
+
+    /*-----------------
+    latest
+    ----------------*/
+    .content.categorie__content {
+        margin-top: 50px;
+    }
+
+    .owl-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .information__work--video.col-lg-6.col-md-6 {
+        margin-top: 50px;
+        height:300px;
+
+    }
+
+    /*-----------------
+    information
+    ----------------*/
+
+
+    .information__latest--content {
+        margin-top: 50px;
+    }
+
+    body .information__latest--news .container .row .information__latest--new {
+        flex-direction: column;
+        height: 100%;
+    }
+    .information__latest--new-img {
+        width: 100%;
+        text-align: center;
+    }
+    .information__latest--new-content {
+        margin: 20px 0;
+        width: 90%;
+    }
+    .information__latest--new-img img {
+        width: 100%;
+    }
+
+
+    /*-----------------
+    statistics
+    ----------------*/
+
+    .statistics {
+        height: 100%;
+        background-attachment: fixed;
+    }
+    .statistics__content h2 {
+        margin-top: 30px;
+        color: #ffffff;
+        text-align: center;
+    }
+    .statistics__numbers{
+        margin-bottom: 30px;
+    }
+
+    /*-----------------
+    company
+    ----------------*/
+
+    .companys__content{
+        margin-top: 50px;
+    }
+    .companys__content h2{
+        text-align: center;
+    }
+
+    /*-----------------
+    footer
+    ----------------*/
+
+    .footer__main--question {
+        margin-top: 50px;
+    }
+    .footer__main--email {
+        margin-top: 30px;
+    }
+}
+@media (max-width:400px){
+    a.navbar-brand{
+        width:57%;
+    }
+}
+
