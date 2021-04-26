@@ -225,6 +225,18 @@ input.form-control,
     font-size: 15px;
     font-weight: 600;
     color: var(--color-gray-400);
+    position: relative;
+}
+i.home__search--input-icon {
+    position: absolute;
+    top: 54%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+i.home__search--input-icon.fas.fa-map-marker-alt {
+    font-size: 18px;
+    top: 50%;
 }
 i.fas.fa-search {
     margin-left: 20px;
@@ -243,6 +255,16 @@ body  .form-control:focus {
 select#time,
 select#vitri{
     height: 100%;
+    -webkit-appearance: none;
+    color: var(--color-gray-400);
+}
+select#time:focus ,
+select#vitri:focus{
+    color:#0c0000;
+}
+.form-field:hover i.home__search--input-icon ,
+.form-field:hover i.home__search--input-icon{
+    color:#0c0000;
 }
 .home__search--button{
     height: 45px;
